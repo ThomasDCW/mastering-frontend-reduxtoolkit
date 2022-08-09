@@ -1,18 +1,6 @@
 {
   "pictures": [
     {
-      "artist": "Kamau",
-      "year": "2005",
-      "photo": "https://picsum.photos/400/484",
-      "id": 3
-    },
-    {
-      "artist": "Samedixs",
-      "year": "2010",
-      "photo": "https://picsum.photos/400/396",
-      "id": 4
-    },
-    {
       "artist": "Misan Harriman",
       "year": "1999",
       "photo": "https://picsum.photos/400/338",
@@ -41,6 +29,30 @@
       "year": "2021",
       "photo": "https://picsum.photos/400/470",
       "id": 9
+    },
+    {
+      "artist": "Thomas",
+      "year": "1991",
+      "photo": "https://picsum.photos/400/428",
+      "id": 11
+    },
+    {
+      "artist": "Pauline",
+      "year": "1989",
+      "photo": "https://picsum.photos/400/340",
+      "id": 12
+    },
+    {
+      "artist": "Pips",
+      "year": "2000",
+      "photo": "https://picsum.photos/400/490",
+      "id": 13
+    },
+    {
+      "artist": "Coucou",
+      "year": "2022",
+      "photo": "https://picsum.photos/400/486",
+      "id": 14
     }
   ]
 }

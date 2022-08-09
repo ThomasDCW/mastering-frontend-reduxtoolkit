@@ -1,10 +1,13 @@
-import axios from "axios";
-import { useRef } from "react";
+import axios from 'axios';
+import { useDispatch } from 'react-redux';
+import { useRef } from 'react';
+import { addPicture } from '../feature/pictures.slice';
 
 const Form = () => {
   const inputArt = useRef();
   const inputYear = useRef();
   const formRef = useRef();
+  const dispatch = useDispatch();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -17,19 +20,20 @@ const Form = () => {
       )}`,
     };
 
-    axios.post("http://localhost:5000/pictures", data).then(() => {
+    axios.post('http://localhost:5000/pictures', data).then(() => {
+      dispatch(addPicture(data));
       formRef.current.reset();
     });
   };
 
   return (
-    <div className="form-container">
-      <div className="form">
+    <div className='form-container'>
+      <div className='form'>
         <h3>Enregistrer une nouvelle photo</h3>
         <form onSubmit={(e) => handleSubmit(e)} ref={formRef}>
-          <input type="text" placeholder="Artiste" ref={inputArt} />
-          <input type="text" placeholder="Année" ref={inputYear} />
-          <input type="submit" value="Envoyer" />
+          <input type='text' placeholder='Artiste' ref={inputArt} />
+          <input type='text' placeholder='Année' ref={inputYear} />
+          <input type='submit' value='Envoyer' />
         </form>
       </div>
     </div>
